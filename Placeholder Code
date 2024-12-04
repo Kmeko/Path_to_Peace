@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    cout << "=== Game Placeholder ===" << endl;
+    cout << "Welcome to the Placeholder Game!" << endl;
+
+    string input;
+    bool running = true;
+
+    while (running) {
+        cout << "\nWhat do you want to do?" << endl;
+        cout << "1. Explore" << endl;
+        cout << "2. View Stats" << endl;
+        cout << "3. Exit" << endl;
+        cout << "> ";
+        cin >> input;
+
+        if (input == "1") {
+            cout << "You explore the vast placeholder world." << endl;
+        } else if (input == "2") {
+            cout << "Player Stats: Level 1, Health 100/100, XP 0" << endl;
+        } else if (input == "3") {
+            cout << "Exiting the game. Goodbye!" << endl;
+            running = false;
+        } else {
+            cout << "Invalid option. Try again." << endl;
+        }
+    }
+
+    return 0;
+}
